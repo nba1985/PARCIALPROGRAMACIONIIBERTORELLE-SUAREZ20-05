@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
+
     <header>
         <h1>Restaurante</h1>
     </header>
+
     <nav>
         <ul>
             <a href="#inicio">Inicio</a>
@@ -18,54 +21,120 @@
             <a href="#contacto">Contacto</a>
         </ul>
     </nav>
+
     <main>
-        <section>
+
+        <!-- INICIO -->
+        <section id="inicio">
             <h2>Bienvenidos a nuestro restaurante</h2>
             <p>Disfruta de la mejor comida en un ambiente acogedor.</p>
         </section>
-        
-        <section id="Menu">
+
+        <!-- PRODUCTO DESTACADO -->
+        <section id="producto">
+            <h2>Producto Destacado</h2>
+
+            <h3 id="NombreProducto"></h3>
+            <p id="DescripcionProducto"></p>
+            <p id="PrecioProducto"></p>
+        </section>
+
+        <!-- MENÚ -->
+        <section id="menu">
+
             <h2>Menú</h2>
+
             <div class="galeria">
+
                 <div class="tarjeta">
-                    <img src="./imagenes/hamburguesa001.jpg" alt="Hamburgesa de Carne">
-                    <h3>Hamburgesa de Carne</h3>
-                    <p>Una deliciosa hamburguesa con carne de res, lechuga, tomate y queso.</p>
+                    <img src="./imagenes/hamburguesa001.jpg" alt="Hamburguesa de Carne">
+
+                    <h3>Hamburguesa de Carne</h3>
+
+                    <p>
+                        Una deliciosa hamburguesa con carne de res,
+                        lechuga, tomate y queso.
+                    </p>
                 </div>
+
                 <div class="tarjeta">
-                    <img src="./imagenes/hamburguesa002.jpg" alt="Hamburgesa de Pollo">
-                    <h3>Hamburgesa de Pollo</h3>
-                    <p>Una sabrosa hamburguesa con pechuga de pollo, lechuga, tomate y queso.</p>
+                    <img src="./imagenes/hamburguesa002.jpg" alt="Hamburguesa de Pollo">
+
+                    <h3>Hamburguesa de Pollo</h3>
+
+                    <p>
+                        Una sabrosa hamburguesa con pechuga de pollo,
+                        lechuga, tomate y queso.
+                    </p>
                 </div>
+
                 <div class="tarjeta">
                     <img src="./imagenes/Tallarines.jpg" alt="Tallarines con Salsa">
+
                     <h3>Tallarines con Salsa</h3>
-                    <p>Deliciosos tallarines con salsa de tomate bolognesa.</p>
+
+                    <p>
+                        Deliciosos tallarines con salsa de tomate bolognesa.
+                    </p>
                 </div>
+
             </div>
-        </section>     
+
+            <!-- INFORMACIÓN MOSTRADA CON JAVASCRIPT -->
+            <div class="info-menu">
+
+                <h3 id="Menu"></h3>
+
+                <p id="descripcionCurso"></p>
+
+                <p id="precioMenu"></p>
+
+                <p id="EstadoMenu"></p>
+
+            </div>
+
+        </section>
+
+        <!-- RESERVAS -->
         <section id="reservas">
+
             <h2>Reservas</h2>
-            <form>
+
+            <form class="formulario">
+
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="date">Fecha:</label>
                 <input type="date" id="date" name="date" required>
+
                 <label for="time">Hora:</label>
                 <input type="time" id="time" name="time" required>
+
                 <button type="submit">Reservar</button>
+
             </form>
+
         </section>
+
+        <!-- CONTACTO -->
         <section id="contacto">
+
             <h2>Contacto</h2>
+
             <p>Teléfono: 123-456-7890</p>
+
             <p>Email: info@restaurante.com</p>
+
         </section>
 
     </main>
+
     <footer>
         <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
     </footer>
+
     <script src="script.js"></script>
+
 </body>
 </html>

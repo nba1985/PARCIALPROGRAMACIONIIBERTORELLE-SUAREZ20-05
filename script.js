@@ -1,23 +1,36 @@
-alert("Bienvenidos");
+alert("Bienvenidos a nuestro restaurante");
 
 console.log("Restaurante");
 
-let nombre = "pizza";
-let descripcion = "pizza con salsa y queso";
-let precio = 899;
+// Hamburguesa de carne
+let nombreProducto = "Hamburguesa de Carne";
+let descripcionProducto = "Una deliciosa hamburguesa con carne de res, lechuga, tomate y queso.";
+let precioProducto = 3500;
 
-let nombreplato = "cc";
-let descripcionplato = "cc";
-let precioplato = 75475;
+// Hamburguesa de pollo
+let nombreMenu = "Hamburguesa de Pollo";
+let descripcionMenu = "Una sabrosa hamburguesa con pechuga de pollo, lechuga, tomate y queso.";
+let precioMenu = 3200;
 
-document.getElementById("NombreProducto").innerHTML = nombre;
-document.getElementById("DescripcionProducto").innerHTML = descripcion;
-document.getElementById("PrecioProducto").innerHTML = "precio:$" + precio;
+// Estado del menú
+let estadoMenu = "Disponible";
 
-document.getElementById("Menu").innerHTML = Menu;
+// Mostrar producto principal
+document.getElementById("NombreProducto").innerHTML = nombreProducto;
+
+document.getElementById("DescripcionProducto").innerHTML = descripcionProducto;
+
+document.getElementById("PrecioProducto").innerHTML = "Precio: $" + precioProducto;
+
+// Mostrar información del menú
+document.getElementById("Menu").innerHTML = nombreMenu;
+
 document.getElementById("descripcionCurso").innerHTML = descripcionMenu;
-document.getElementById("precioMenu").innerHTML = "precio:$" + precioMenu;
-document.getElementById("EstadoMenu").innerHTML = "Estado:" + estadoMenu;
 
-    document.body.style.backgroundColor = "brown";
+document.getElementById("precioMenu").innerHTML = "Precio: $" + precioMenu;
+
+document.getElementById("EstadoMenu").innerHTML = "Estado: " + estadoMenu;
+
+// Cambiar fondo
+document.body.style.backgroundColor = "brown";
 
