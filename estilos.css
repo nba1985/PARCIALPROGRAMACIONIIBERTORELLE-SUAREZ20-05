@@ -1,78 +1,203 @@
-.galeria {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 30px; 
-    padding: 30px; 
-    background-color: aquamarine; 
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-    .menu {
-    flex-direction: column; 
-    align-items: center; 
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4eadc;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    width: 90%;
+    margin: 25px auto 10px auto;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* ================= NAV ================= */
+
+nav {
+    width: 90%;
+    margin: 0 auto 25px auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #008037;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #005f28;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/* ================= SECCIONES ================= */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ================= GALERIA / MENÚ ================= */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 .tarjeta {
+    width: 300px;
+    background-color: #fffaf3;
+    padding: 15px;
+    border-radius: 15px;
     transition: 0.3s;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.15);
 }
+
 .tarjeta:hover {
     transform: scale(1.05);
 }
+
 .tarjeta img {
-    width: 100%; 
+    width: 100%;
     height: 200px;
-    max-width: 100%;
-    object-fit: cover; 
-    border-radius: 10px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta h3 {
+    margin: 15px 0 10px;
+}
+
+/* ================= RESERVAS ================= */
+
+#reservas {
+    background-color: #f3e3cf;
 }
 
 .formulario {
-    width: 400px; 
-    margin: auto; 
-    display: flex; 
+    width: 400px;
+    margin: auto;
+    display: flex;
     flex-direction: column;
-    gap: 15px; 
-    background-color: white; 
-    padding: 30px; 
-    border-radius: 15px; 
-    box-shadow: 0 0 15px gray; 
+    gap: 15px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px gray;
 }
 
-.formulario input,
-.formulario textarea {
-    padding: 12px;  
-    border-radius: 10px; 
-    border: 1px solid rgb(224, 19, 19); 
-    font-size: 16px; 
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 16px;
 }
 
 .formulario button {
-    background-color: rgb(21, 239, 21); 
-    color: white; 
-    padding: 12px; 
-    border: none; 
-    border-radius: 10px; 
+    background-color: #ec6f51;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s; 
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
 }
+
+.formulario button:hover {
+    background-color: #d85d42;
+}
+
+/* ================= CONTACTO ================= */
+
+#contacto {
+    text-align: center;
+}
+
+#contacto p {
+    margin: 10px 0;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
 
-    .menu ul {
-        flex-direction: column; 
+    nav ul {
+        flex-direction: column;
         align-items: center;
-    }
-    
-    .galeria {
-        flex-direction: column; 
-        align-items: center; 
-        padding: 15px; 
+        gap: 15px;
     }
 
-    .tarjeta { 
-        width: 90%; 
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
     }
 
     .formulario {
-        width: 90%; 
+        width: 90%;
     }
 }

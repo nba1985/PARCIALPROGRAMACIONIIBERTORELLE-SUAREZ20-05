@@ -13,12 +13,13 @@
         <h1>Restaurante</h1>
     </header>
 
+    <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
         <ul>
-            <a href="#inicio">Inicio</a>
-            <a href="#menu">Menú</a>
-            <a href="#reservas">Reservas</a>
-            <a href="#contacto">Contacto</a>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -27,16 +28,23 @@
         <!-- INICIO -->
         <section id="inicio">
             <h2>Bienvenidos a nuestro restaurante</h2>
-            <p>Disfruta de la mejor comida en un ambiente acogedor.</p>
+
+            <p>
+                Disfruta de la mejor comida en un ambiente acogedor.
+            </p>
         </section>
 
         <!-- PRODUCTO DESTACADO -->
         <section id="producto">
+
             <h2>Producto Destacado</h2>
 
-            <h3 id="NombreProducto"></h3>
-            <p id="DescripcionProducto"></p>
-            <p id="PrecioProducto"></p>
+            <h3 id="nombreProducto"></h3>
+
+            <p id="descripcionProducto"></p>
+
+            <p id="precioProducto"></p>
+
         </section>
 
         <!-- MENÚ -->
@@ -46,8 +54,11 @@
 
             <div class="galeria">
 
+                <!-- HAMBURGUESA DE CARNE -->
                 <div class="tarjeta">
-                    <img src="./imagenes/hamburguesa001.jpg" alt="Hamburguesa de Carne">
+
+                    <img src="./imagenes/hamburguesa001.jpg"
+                         alt="Hamburguesa de Carne">
 
                     <h3>Hamburguesa de Carne</h3>
 
@@ -55,10 +66,14 @@
                         Una deliciosa hamburguesa con carne de res,
                         lechuga, tomate y queso.
                     </p>
+
                 </div>
 
+                <!-- HAMBURGUESA DE POLLO -->
                 <div class="tarjeta">
-                    <img src="./imagenes/hamburguesa002.jpg" alt="Hamburguesa de Pollo">
+
+                    <img src="./imagenes/hamburguesa002.jpg"
+                         alt="Hamburguesa de Pollo">
 
                     <h3>Hamburguesa de Pollo</h3>
 
@@ -66,16 +81,22 @@
                         Una sabrosa hamburguesa con pechuga de pollo,
                         lechuga, tomate y queso.
                     </p>
+
                 </div>
 
+                <!-- TALLARINES -->
                 <div class="tarjeta">
-                    <img src="./imagenes/Tallarines.jpg" alt="Tallarines con Salsa">
+
+                    <img src="./imagenes/Tallarines.jpg"
+                         alt="Tallarines con Salsa">
 
                     <h3>Tallarines con Salsa</h3>
 
                     <p>
-                        Deliciosos tallarines con salsa de tomate bolognesa.
+                        Deliciosos tallarines con salsa
+                        de tomate bolognesa.
                     </p>
+
                 </div>
 
             </div>
@@ -83,13 +104,13 @@
             <!-- INFORMACIÓN MOSTRADA CON JAVASCRIPT -->
             <div class="info-menu">
 
-                <h3 id="Menu"></h3>
+                <h3 id="nombreMenu"></h3>
 
-                <p id="descripcionCurso"></p>
+                <p id="descripcionMenu"></p>
 
                 <p id="precioMenu"></p>
 
-                <p id="EstadoMenu"></p>
+                <p id="estadoMenu"></p>
 
             </div>
 
@@ -103,15 +124,29 @@
             <form class="formulario">
 
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
 
                 <label for="date">Fecha:</label>
-                <input type="date" id="date" name="date" required>
+
+                <input type="date"
+                       id="date"
+                       name="date"
+                       required>
 
                 <label for="time">Hora:</label>
-                <input type="time" id="time" name="time" required>
 
-                <button type="submit">Reservar</button>
+                <input type="time"
+                       id="time"
+                       name="time"
+                       required>
+
+                <button type="submit">
+                    Reservar
+                </button>
 
             </form>
 
@@ -130,10 +165,17 @@
 
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+
+        <p>
+            &copy; 2024 Restaurante.
+            Todos los derechos reservados.
+        </p>
+
     </footer>
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
