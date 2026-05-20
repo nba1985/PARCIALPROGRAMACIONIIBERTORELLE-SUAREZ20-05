@@ -1,4 +1,4 @@
-/* ================= RESET ================= */
+
 
 * {
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* ================= BODY ================= */
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@ body {
     color: #222;
 }
 
-/* ================= HEADER ================= */
+
 
 header {
     width: 90%;
@@ -30,7 +30,6 @@ header h1 {
     font-size: 32px;
 }
 
-/* ================= NAV ================= */
 
 nav {
     width: 90%;
@@ -59,14 +58,13 @@ nav a:hover {
     color: #005f28;
 }
 
-/* ================= MAIN ================= */
 
 main {
     width: 90%;
     margin: auto;
 }
 
-/* ================= SECCIONES ================= */
+
 
 section {
     background-color: white;
@@ -81,7 +79,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* ================= GALERIA / MENÚ ================= */
+
 
 .galeria {
     display: flex;
@@ -114,7 +112,6 @@ section h2 {
     margin: 15px 0 10px;
 }
 
-/* ================= RESERVAS ================= */
 
 #reservas {
     background-color: #f3e3cf;
@@ -159,7 +156,7 @@ section h2 {
     background-color: #d85d42;
 }
 
-/* ================= CONTACTO ================= */
+
 
 #contacto {
     text-align: center;
@@ -169,7 +166,6 @@ section h2 {
     margin: 10px 0;
 }
 
-/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
@@ -178,7 +174,7 @@ footer {
     color: #555;
 }
 
-/* ================= RESPONSIVE ================= */
+
 
 @media (max-width: 768px) {
 
