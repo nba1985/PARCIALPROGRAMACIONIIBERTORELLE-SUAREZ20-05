@@ -1,0 +1,78 @@
+.galeria {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+    padding: 30px; 
+    background-color: aquamarine; 
+}
+    .menu {
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.tarjeta {
+    transition: 0.3s;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+.tarjeta img {
+    width: 100%; 
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.formulario {
+    width: 400px; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: column;
+    gap: 15px; 
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 0 15px gray; 
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;  
+    border-radius: 10px; 
+    border: 1px solid rgb(224, 19, 19); 
+    font-size: 16px; 
+}
+
+.formulario button {
+    background-color: rgb(21, 239, 21); 
+    color: white; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+@media (max-width: 768px) {
+
+    .menu ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .galeria {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 15px; 
+    }
+
+    .tarjeta { 
+        width: 90%; 
+    }
+
+    .formulario {
+        width: 90%; 
+    }
+}
